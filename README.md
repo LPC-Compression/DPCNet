@@ -1,4 +1,4 @@
-# SCPNet
+# DPCNet
 This is the official code for our paper "DPCNet: Dual-Path Compression Network with Multi-Scale Geometric Context for LiDAR Point Cloud"
 
 ## Installation
