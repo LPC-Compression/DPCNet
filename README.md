@@ -19,11 +19,11 @@ Please refer to the official [website of KITTI](https://www.cvlibs.net/datasets/
 You need to be a member of MPEG first. The Ford dataset is provided on their [website](https://mpegfs.int-evry.fr/mpegcontent/ws-mpegcontent/MPEG-I).
 
 ## Train DPCNet
-python train.py --datatype semantickitti  --gpu_id 2 --model_save_folder ./model/kitti.pt --K 32 --train_glob ./datasets/SemanticKITTIDataset/
+python train.py --datatype semantickitti  --gpu_id 0 --model_save_folder ./model/kitti.pt --K 32 --train_glob ./datasets/SemanticKITTIDataset/
 
 
 
-python train.py --datatype ford  --gpu_id 2 --model_save_folder ./model/ford.pt --K 64 --train_glob ./datasets/Ford/Ford_full/Ford_01_q_1mm/\*.ply
+python train.py --datatype ford  --gpu_id 0 --model_save_folder ./model/ford.pt --K 64 --train_glob ./datasets/Ford/Ford_full/Ford_01_q_1mm/\*.ply
 
 ## Eval DPCNet
 ### Eval DPCNet on SemanticKITTI
@@ -35,11 +35,11 @@ chmod +x tmc3_v29
 
 
 
-python encode.py --input_globs ./data/SemanticKITTI/\*.ply --compressed_path ./data/SemanticKITTI/compress/ --datatype semantickitti --gpu_id 2 --K 32 --use_oae
+python encode.py --input_globs ./data/SemanticKITTI/\*.ply --compressed_path ./data/SemanticKITTI/compress/ --datatype semantickitti --gpu_id 0 --K 32 --use_oae
 
 
 
-python decode.py  --compressed_path ./data/SemanticKITTI/compress/ --decompressed_path ./data/SemanticKITTI/decompress/ --datatype semantickitti --gpu_id 2 --use_oae
+python decode.py  --compressed_path ./data/SemanticKITTI/compress/ --decompressed_path ./data/SemanticKITTI/decompress/ --datatype semantickitti --gpu_id 0 --use_oae
 
 
 
@@ -55,11 +55,11 @@ chmod +x tmc3_v29
 
 
 
-python encode.py --input_globs ./data/Ford/\*.ply --compressed_path ./data/Ford/compress/ --datatype ford --gpu_id 2 --K 64 --use_oae
+python encode.py --input_globs ./data/Ford/\*.ply --compressed_path ./data/Ford/compress/ --datatype ford --gpu_id 0 --K 64 --use_oae
 
 
 
-python decode.py  --compressed_path ./data/Ford/compress/ --decompressed_path ./data/Ford/decompress/ --datatype ford --gpu_id 2 --use_oae
+python decode.py  --compressed_path ./data/Ford/compress/ --decompressed_path ./data/Ford/decompress/ --datatype ford --gpu_id 0 --use_oae
 
 
 
@@ -76,11 +76,11 @@ chmod +x tmc3_v29
 
 
 
-python encode.py --input_globs ./data/SemanticKITTI/\*.ply --compressed_path ./data/SemanticKITTI/compress/ --datatype semantickitti --gpu_id 2 --K 32
+python encode.py --input_globs ./data/SemanticKITTI/\*.ply --compressed_path ./data/SemanticKITTI/compress/ --datatype semantickitti --gpu_id 0 --K 32
 
 
 
-python decode.py  --compressed_path ./data/SemanticKITTI/compress/ --decompressed_path ./data/SemanticKITTI/decompress/ --datatype semantickitti --gpu_id 2
+python decode.py  --compressed_path ./data/SemanticKITTI/compress/ --decompressed_path ./data/SemanticKITTI/decompress/ --datatype semantickitti --gpu_id 0
 
 
 
@@ -96,11 +96,11 @@ chmod +x tmc3_v29
 
 
 
-python encode.py --input_globs ./data/Ford/\*.ply --compressed_path ./data/Ford/compress/ --datatype ford --gpu_id 2 --K 64
+python encode.py --input_globs ./data/Ford/\*.ply --compressed_path ./data/Ford/compress/ --datatype ford --gpu_id 0 --K 64
 
 
 
-python decode.py  --compressed_path ./data/Ford/compress/ --decompressed_path ./data/Ford/decompress/ --datatype ford --gpu_id 2
+python decode.py  --compressed_path ./data/Ford/compress/ --decompressed_path ./data/Ford/decompress/ --datatype ford --gpu_id 0
 
 
 
