@@ -3,7 +3,7 @@ This is the official code for our paper "DPCNet: Dual-Path Compression Network w
 
 ## Visualization Results
 The visualization results of DPCNet point cloud compression on SemanticKITTI and Ford datasets:  
-<video src="https://username.github.io/repo-name/Video.mp4" controls width="600"></video>
+<video src="https://LPC-Compression.github.io/DPCNet/Video.mp4" controls width="600"></video>
 
 ## Installation
 
