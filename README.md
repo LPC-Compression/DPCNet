@@ -1,5 +1,9 @@
 # DPCNet
-This is the official code for our paper "DPCNet: Dual-Path Compression Network with Multi-Scale Geometric Context for LiDAR Point Cloud"
+This is the official code for our paper "DPCNet: Dual-Path Compression Network with Multi-Scale Geometric Context for LiDAR Point Cloud."
+
+## Visualization Results
+The visualization results of DPCNet point cloud compression on SemanticKITTI and Ford datasets:  
+<video src="https://username.github.io/repo-name/Video.mp4" controls width="600"></video>
 
 ## Installation
 
